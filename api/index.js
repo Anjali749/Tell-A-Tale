@@ -22,7 +22,7 @@ mongoose
     .then(console.log("Connected to MongoDB"))
     .catch((err) => console.log(err));
 
-// 
+// TO ADD IMAGES/PHOTOS FROM DEVICE LOCAL STORAGE
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, "images")
