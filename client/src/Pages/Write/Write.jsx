@@ -46,7 +46,7 @@ const handleSubmit = async (e) => {
             <div className="writeFormGroup">
           <textarea
             className="writeInput writeText"
-            placeholder="Share your expertise..."
+            placeholder="Share your story..."
             type="text"
             autoFocus={true}
             onChange={e=>setDesc(e.target.value)}

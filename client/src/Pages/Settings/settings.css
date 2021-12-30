@@ -19,12 +19,6 @@
     color: rgb(175, 77, 175);
 }
 
-.settingsTitleDelete {
-    color: red;
-    font-size: 12px;
-    cursor: pointer;
-}
-
 .settingsForm {
     display: flex;
     flex-direction: column;

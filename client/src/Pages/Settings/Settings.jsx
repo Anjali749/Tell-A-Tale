@@ -10,7 +10,7 @@ export default function Settings() {
   const [password, setPassword] = useState("")
   const [success, setSuccess] = useState(false);
   const { user, dispatch } = useContext(Context);
-  const PF = "http://localhost:5000/images/"
+  const PF = "http://localhost:7000/images/"
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -45,7 +45,6 @@ export default function Settings() {
       <div className="settingsWrapper">
         <div className="settingsTitle">
           <span className="settingsTitleUpdate">Update Your Account</span>
-          <span className="settingsTitleDelete">Delete Account</span>
         </div>
         <form className="settingsForm" onSubmit={handleSubmit}>
           <label>Profile Picture</label>
@@ -67,7 +66,7 @@ export default function Settings() {
           </button>
          {success && (
             <span style={{ color: "green", textAlign: "center", marginTop: "20px" }}>
-              Your profile has been updated...
+              Your profile has been successfully updated!
             </span>
           )}
         </form>
